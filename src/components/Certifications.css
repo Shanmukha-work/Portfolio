@@ -1,0 +1,68 @@
+.certifications-section {
+  padding: 80px 20px;
+  background-color: #0a0a1a;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.cert-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cert-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.cert-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #2563EB, #3B82F6);
+}
+
+.cert-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #2563EB, #3B82F6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.cert-info h3 {
+  color: #e2e8f0;
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+}
+
+.cert-info .issuer {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  margin: 0 0 20px 0;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #1e40af, #2563EB);
+  color: #e2e8f0;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.2);
+}
